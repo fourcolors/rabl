@@ -1,6 +1,7 @@
 module Rabl
   class Engine
     include Rabl::Helpers
+    include ActionView::Helpers::DateHelper
 
     # Constructs a new ejs engine based on given vars, handler and declarations
     # Rabl::Engine.new("...source...", { :format => "xml", :root => true, :view_path => "/path/to/views" })
